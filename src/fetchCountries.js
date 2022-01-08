@@ -3,6 +3,8 @@
 export function fetchCountries (contryName) {
   return fetch(`https://restcountries.com/v3.1/name/${contryName}?fields=name,capital,population,flags,languages,fifa`)
     .then(r => {
-        return r.json()  
+      if (r.ok) {
+        return r.json() 
+      }
     })
 }

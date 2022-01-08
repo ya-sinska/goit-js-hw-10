@@ -11,6 +11,8 @@ body {
   color: #212121;
   line-height: 1.5;
   padding: 15px;
+  margin: 0;
+  background-color: rgb(232, 237, 241);
 }
 
 #search-box {
@@ -22,12 +24,12 @@ body {
 li {
   list-style: none;
 }
-.card {
+input {
   margin-bottom: 20px;
 }
 .country-list {
   padding: 0;
-  margin-top: 20px;
+  margin: 0;
 }
 .card-title {
   display: flex;
@@ -35,7 +37,6 @@ li {
   margin-bottom: 10px;
 }
 .card-image {
-  height: auto;
   width: 40px;
   display: block;
 }
@@ -45,8 +46,14 @@ li {
   font-size: 30px;
   font-weight: bold;
 }
+.card-name--list {
+  margin: 0;
+  margin-left: 15px;
+  font-size: 15px;
+}
 .card-description {
   padding: 0;
+  margin: 0;
 }
 
 .card-description__item:not(:last-child) {
